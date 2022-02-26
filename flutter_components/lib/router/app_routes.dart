@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_components/models/menu_option.dart';
 import 'package:flutter_components/screens/screens.dart';
+import 'package:flutter_components/widgets/widgets.dart';
 
 class AppRoutes {
   static const initialRoute = 'home';
@@ -11,6 +12,11 @@ class AppRoutes {
     MenuOption(route: 'listview2' , name: 'List View 2', screen: const ListView2Screen(), icon: Icons.list_alt_rounded),
     MenuOption(route: 'card' , name: 'Card', screen: const CardScreen(), icon: Icons.card_giftcard_rounded),
     MenuOption(route: 'alert' , name: 'Alert', screen: const AlertScreen(), icon: Icons.add_alert_rounded),
+    MenuOption(route: 'avatar' , name: 'Avatar', screen: const AvatarScreen(), icon: Icons.account_circle),
+    MenuOption(route: 'animated' , name: 'Animations', screen: const AnimatedScreen(), icon: Icons.animation_outlined),
+    MenuOption(route: 'inputs' , name: 'Inputs', screen: const InputsScreen(), icon: Icons.input_rounded),
+    MenuOption(route: 'slider' , name: 'Slider', screen: const SliderScreen(), icon: Icons.sledding),
+    MenuOption(route: 'list_view' , name: 'Infinite Scroll & Pull to Refresh', screen: const ListViewBuilderScreen(), icon: Icons.build_circle_rounded)
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {

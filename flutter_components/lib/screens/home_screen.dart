@@ -20,7 +20,7 @@ class HomeScreen extends StatelessWidget {
             onTap: () {
               // final route = MaterialPageRoute(builder: (context) => const ListView1Screen(),);
               // Navigator.push(context, route);
-
+        
               Navigator.pushNamed(context, menuOptions[index].route);
             },
           ),

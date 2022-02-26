@@ -9,7 +9,7 @@ class AlertScreen extends StatelessWidget {
       barrierDismissible: true,
       context: context, 
       builder: (context) {
-        return AlertDialog(
+        return AlertDialog( 
           elevation: 2,
           title: const Text('Esto es un Alert'),
           content: Column(
